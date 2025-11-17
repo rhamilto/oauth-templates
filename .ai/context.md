@@ -1,6 +1,6 @@
 # OpenShift OAuth Templates - AI Context
 
-This document outlines the core development conventions for the OpenShift OAuth Templates codebase. For comprehensive project structure, deployment workflows, and additional context, see [../README.md](../README.md).
+This document outlines the core development conventions for the OpenShift OAuth Templates codebase. For comprehensive project structure, deployment workflows, and additional context, see [./README.md](./README.md).
 
 ## Project Overview
 
@@ -11,8 +11,8 @@ This repository contains the upstream source for the login, errors, and provider
 - **Setup**: `bundle install && yarn install`
 - **Build**: `yarn build-jekyll`
 - **Dev server**: `yarn serve-jekyll`
-- **Generate styles**: `yarn generate-styles` (run after adding new PatternFly classes)
-- **Generate branding secret**: `yarn generate-branding-secret`
+- **Generate styles**: `yarn generate-styles` (run after using new PatternFly classes)
+- **Generate branding secret**: `yarn generate-branding-secret`, used to update https://github.com/openshift/cluster-authentication-operator
 
 ## Directory Structure
 
@@ -66,7 +66,7 @@ This repository contains the upstream source for the login, errors, and provider
 
 ## Deployment
 
-See [README.md](../README.md) for detailed deployment instructions for each OpenShift variant (OKD, RHO, OD, ROSA).
+See [README.md](./README.md) for detailed deployment instructions for each OpenShift variant (OKD, RHO, OD, ROSA).
 
 ## Branch Naming
 
